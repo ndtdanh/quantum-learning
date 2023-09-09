@@ -48,7 +48,7 @@ numruns = 10
 from dwave.system.samplers import DWaveSampler
 from dwave.system.composites import EmbeddingComposite
 # Run the QUBO on the solver from your config file
-token = 'DEV-a94bb603b68588522e02bc26d967fcc60102b522'
+token = '#Enter your key here'
 qpu_solver = DWaveSampler(token=token, solver=dict(chip_id='Advantage_system4.1',topology__type='pegasus'))
 sol_specs = qpu_solver.properties
 sampler = EmbeddingComposite(qpu_solver)
